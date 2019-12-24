@@ -6,10 +6,6 @@ url="http://coreyms.com"
 # It will recieve response object or code
 response=requests.get(url)
 
-# Getting text out of that response
-data=response.text
-# Using Beautiful soup to parsing html webpage
-# Here lxml parser is used
 soup=BeautifulSoup(data,'lxml')
 
 # it justs print out the html code recieved in a perfect manner
